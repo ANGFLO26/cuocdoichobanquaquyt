@@ -5,32 +5,47 @@ const FooterSection = () => {
     return (
         <section className="footer-section">
             <div className="container fade-in-up">
-                <p style={{
-                    fontSize: '1.8rem',
-                    marginBottom: '2rem',
-                    color: 'var(--color-text-main)',
-                    fontWeight: '400',
-                    fontFamily: 'var(--font-heading)',
-                    lineHeight: '1.6'
+                <div className="glass-panel" style={{
+                    padding: '4rem',
+                    maxWidth: '800px',
+                    textAlign: 'center'
                 }}>
-                    Chúc Duyên một học kỳ thật <br />
-                    <span style={{ color: 'var(--color-highlight)', fontWeight: '700' }}>thành công</span>,
-                    <span style={{ color: 'var(--color-highlight)', fontWeight: '700' }}> năng lượng</span> <br />
-                    và thật nhiều <span style={{ fontFamily: 'var(--font-script)', fontSize: '2.5rem' }}>niềm vui</span>. 🌱
-                </p>
+                    <p style={{
+                        fontSize: '2rem',
+                        marginBottom: '2.5rem',
+                        color: 'var(--color-text-main)',
+                        fontWeight: '400',
+                        fontFamily: 'var(--font-heading)',
+                        lineHeight: '1.6'
+                    }}>
+                        Chúc Duyên một học kỳ thật <br />
+                        <span style={{ color: 'var(--color-highlight)', fontWeight: '700' }}>thành công</span>,
+                        <span style={{ color: 'var(--color-highlight)', fontWeight: '700' }}> năng lượng</span> <br />
+                        và thật nhiều <span style={{ fontFamily: 'var(--font-script)', fontSize: '2.8rem' }}>niềm vui</span>. 🌱
+                    </p>
 
-                <div style={{ margin: '2rem 0', fontSize: '2rem', animation: 'pulse 2s infinite' }}>
-                    ✨
+                    <div style={{ margin: '2rem 0', fontSize: '2.5rem', animation: 'pulse 2s infinite' }}>
+                        ✨
+                    </div>
+
+                    <div style={{
+                        marginTop: '2rem',
+                        borderTop: '1px solid rgba(219, 112, 147, 0.2)',
+                        paddingTop: '2rem',
+                        display: 'inline-block',
+                        width: '60%'
+                    }}>
+                        <p style={{
+                            fontSize: '1.8rem',
+                            color: 'var(--color-highlight)',
+                            fontFamily: 'var(--font-script)',
+                            transform: 'rotate(-5deg)',
+                            margin: 0
+                        }}>
+                            Cố leennnnnn nàaaaaa!
+                        </p>
+                    </div>
                 </div>
-
-                <p style={{
-                    fontSize: '1.2rem',
-                    color: 'var(--color-text-card)',
-                    marginTop: '1rem',
-                    fontFamily: 'var(--font-script)'
-                }}>
-                    Cố leennnnnn nàaaaaa.
-                </p>
 
                 <style>{`
           @keyframes pulse {

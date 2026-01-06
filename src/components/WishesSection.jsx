@@ -4,18 +4,17 @@ import { FaBookOpen, FaRegClock, FaLeaf, FaStar } from 'react-icons/fa';
 
 const WishCard = ({ icon, title, items, delay }) => (
     <div className={`wish-card fade-in-up glass-panel ${delay}`} style={{
-        padding: '1.5rem',
+        padding: '2rem 1.5rem', // More vertical padding
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: '0.5rem',
+        gap: '0.8rem',
         height: '100%',
-        justifyContent: 'center',
-        background: 'rgba(255, 255, 255, 0.4)' // Slightly more transparent than default glass
+        justifyContent: 'center'
     }}>
         <div style={{
-            fontSize: '2rem',
+            fontSize: '2.2rem',
             color: 'var(--color-primary)',
             marginBottom: '0.5rem',
             filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))'
@@ -23,17 +22,19 @@ const WishCard = ({ icon, title, items, delay }) => (
             {icon}
         </div>
         <h3 style={{
-            fontSize: '1.1rem',
+            fontSize: '1.3rem',
             margin: '0',
             color: 'var(--color-text-main)',
+            fontFamily: 'var(--font-heading)',
             fontWeight: '700'
         }}>{title}</h3>
         <ul style={{
-            fontSize: '0.85rem',
+            fontSize: '1rem',
             color: 'var(--color-text-card)',
-            lineHeight: '1.4',
+            lineHeight: '1.5',
             marginTop: '0.5rem',
-            fontWeight: '500'
+            fontFamily: 'var(--font-main)',
+            fontWeight: '600'
         }}>
             {items.map((item, idx) => (
                 <li key={idx}>{item}</li>
@@ -47,25 +48,25 @@ const WishesSection = () => {
         {
             icon: <FaBookOpen />,
             title: "Học tập",
-            items: ["Hiểu bài", "Giữ nhịp học đều", "Không áp lực"],
+            items: ["Học tập tốt", "Không áp lực"],
             delay: "delay-100"
         },
         {
             icon: <FaRegClock />,
             title: "Thời gian",
-            items: ["Biết sắp xếp", "Nghỉ ngơi hợp lý", "Không mệt mỏi"],
+            items: ["Thư giãn nhìu hơn nà", "Không mệt lun nà"],
             delay: "delay-200"
         },
         {
             icon: <FaLeaf />,
             title: "Bản thân",
-            items: ["Tự tin hơn", "Yêu thương mình", "Ghi nhận nỗ lực"],
+            items: ["Tự tin hơn", "Yêu thương mình"],
             delay: "delay-300"
         },
         {
             icon: <FaStar />,
             title: "Thành công",
-            items: ["Đúng mong muốn", "Vừa sức", "Nhiều niềm vui"],
+            items: ["Nhiều hạnh phúc", "Nhiều niềm vui"],
             delay: "delay-500"
         }
     ];
@@ -74,19 +75,20 @@ const WishesSection = () => {
         <section className="wishes-section">
             <div className="container">
                 <h2 style={{
-                    marginBottom: '2rem',
+                    marginBottom: '2.5rem',
                     textAlign: 'center',
                     color: 'var(--color-text-main)',
-                    fontSize: '1.8rem',
+                    fontSize: '2.2rem',
+                    fontFamily: 'var(--font-script)',
                     textShadow: '0 2px 4px rgba(255,255,255,0.8)'
                 }} className="fade-in-up">
-                    Những điều nhắn gửi
+                    Gửi đến Duyên nhóaaa
                 </h2>
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(2, 1fr)',
-                    gap: '1.5rem',
-                    maxWidth: '800px',
+                    gap: '2rem', // Increased gap
+                    maxWidth: '850px',
                     width: '100%'
                 }}>
                     {wishes.map((wish, index) => (

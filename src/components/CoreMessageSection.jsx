@@ -36,17 +36,18 @@ const CoreMessageSection = () => {
                         lineHeight: '1.8',
                         fontWeight: '400',
                         margin: 0,
+                        textAlign: 'center',
                         textShadow: '0 2px 4px rgba(255,255,255,0.5)'
                     }}>
-                        Bạn không cần phải giỏi hơn ai khác. <br />
+                        Duyên không cần sao hết nà. <br />
                         Chỉ cần <span style={{
                             fontFamily: 'var(--font-script)',
                             color: 'var(--color-highlight)',
                             fontSize: '3.5rem',
                             display: 'block',
                             marginTop: '10px'
-                        }}>tốt hơn chính mình</span> <br />
-                        <span style={{ fontSize: '1.8rem', fontStyle: 'italic' }}>của hôm qua.</span>
+                        }}>Duyên là Duyên thuii nàaaa  </span> <br />
+                        <span style={{ fontSize: '1.8rem', fontStyle: 'italic' }}></span>
                     </h2>
                 </div>
             </div>

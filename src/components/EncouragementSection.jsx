@@ -5,28 +5,37 @@ const EncouragementSection = () => {
     return (
         <section className="encouragement-section">
             <div className="container fade-in-up">
-                <div style={{
-                    maxWidth: '650px',
-                    textAlign: 'center',
-                    lineHeight: '2',
-                    fontSize: '1.2rem',
-                    color: 'var(--color-text-main)',
-                    padding: '3rem'
-                }} className="glass-panel">
-                    <p style={{ marginBottom: '1.5rem' }}>
-                        Đầu kỳ luôn có nhiều việc phải bắt đầu.
-                    </p>
-                    <p style={{ marginBottom: '1.5rem' }}>
-                        Có thể sẽ mệt, có thể sẽ áp lực.
-                    </p>
-                    <p style={{
-                        fontFamily: 'var(--font-script)',
-                        color: 'var(--color-highlight)',
-                        fontSize: '1.8rem',
-                        marginTop: '2rem',
-                        lineHeight: '1.4'
+                <div className="glass-panel" style={{
+                    maxWidth: '750px',
+                    textAlign: 'left',
+                    padding: '4rem 3rem',
+                    color: 'var(--color-text-main)'
+                }}>
+                    <div style={{
+                        fontFamily: 'var(--font-heading)',
+                        fontStyle: 'italic',
+                        fontSize: '1.4rem',
+                        lineHeight: '1.8'
                     }}>
-                        Nhưng mình tin, từng bước nhỏ bạn đi mỗi ngày đều đang đưa bạn đến gần mục tiêu hơn.
+                        <p style={{ marginBottom: '1.5rem' }}>
+                            Kì mới có nhiều việc phải bắt đầu.
+                        </p>
+                        <p style={{ marginBottom: '1.5rem' }}>
+                            Có thể sẽ mệt, có thể sẽ áp lực.
+                        </p>
+                    </div>
+
+                    <p style={{
+                        marginTop: '2.5rem',
+                        lineHeight: '1.6',
+                        fontWeight: '500',
+                        fontSize: '1.3rem',
+                        fontFamily: 'var(--font-main)',
+                        borderLeft: '4px solid var(--color-primary)',
+                        paddingLeft: '20px'
+                    }}>
+                        Nhưng tớ tin không có gì làm khó được <span style={{ fontFamily: 'var(--font-script)', fontSize: '2.2rem', color: 'var(--color-highlight)' }}>Duyên</span> nà. <br />
+                        Hai mình cùng nhau vượt qua mọi <span style={{ fontFamily: 'var(--font-script)', fontSize: '2.2rem', color: 'var(--color-highlight)' }}>khó khăn</span> nhoaa.
                     </p>
                 </div>
             </div>
