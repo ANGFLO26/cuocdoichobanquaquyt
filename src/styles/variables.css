@@ -1,0 +1,58 @@
+:root {
+    /* Pink Theme Palette */
+    --color-bg-primary: #FFF0F5;
+    /* Lavender Blush - Very soft pink */
+    --color-bg-accent: #FFFFFF;
+    /* White */
+    --color-primary: #DB7093;
+    /* Pale Violet Red - Main accent */
+    --color-secondary: #FFB6C1;
+    /* Light Pink */
+    --color-text-main: #8B475D;
+    /* Dark pink/purple for reading */
+    --color-text-card: #6D3D4E;
+    /* Softer dark pink */
+    --color-highlight: #C71585;
+    /* Medium Violet Red for emphasis */
+
+    /* Typography */
+    --font-main: 'Quicksand', sans-serif;
+    /* Readable, soft body text */
+    --font-heading: 'Playfair Display', serif;
+    /* Elegant, premium headings */
+    --font-script: 'Dancing Script', cursive;
+    /* Handwritten, artistic accents */
+
+    /* Spacing */
+    --spacing-section: 2rem;
+
+    /* Animations */
+    --transition-fast: 0.3s ease;
+    --transition-slow: 0.8s ease-out;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow: hidden;
+    /* Prevent scrolling */
+    height: 100vh;
+    width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: var(--font-heading);
+    /* Apply Serif font to all headings */
+    font-weight: 700;
+    color: var(--color-text-main);
+}
